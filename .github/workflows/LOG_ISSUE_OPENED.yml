@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Check closed issue state step
-        uses: malagarda/github-cloud-project-sync/code/github-cloud-project-sync/dist@main
+        uses: malagarda/github-cloud-project-sync/code/github-cloud-project-sync@main
         id: log_issue_opened_event
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
