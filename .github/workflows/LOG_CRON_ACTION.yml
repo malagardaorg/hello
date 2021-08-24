@@ -1,6 +1,6 @@
 on: 
   schedule:
-    - cron: "0 1/1 * * *"
+    - cron: "1 * * * *"
 jobs:
   log_issue_opened_event:
     runs-on: ubuntu-latest
