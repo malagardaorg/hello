@@ -1,8 +1,8 @@
 on: 
   schedule:
-    - cron: "1 1 * * *"
+    - cron: "1 * * * *"
 jobs:
-  log_issue_opened_event:
+  log_sync_project:
     runs-on: ubuntu-latest
     steps:
       # To use this repository's private action,
@@ -11,6 +11,6 @@ jobs:
         uses: actions/checkout@v2
       - name: Check closed issue state step
         uses: malagarda/github-cloud-project-sync/code/github-cloud-project-sync@main
-        id: log_issue_opened_event
+        id: log_sync_project
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
