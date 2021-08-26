@@ -14,3 +14,5 @@ jobs:
         id: log_sync_project
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          destination: 1234
