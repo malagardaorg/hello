@@ -10,7 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          repository: malagarda/github-cloud-project-sync
+          repository: malagardaorg/github-cloud-project-sync
           ref: refs/heads/main
           path: ./.github/actions/github-cloud-project-sync
           token: ${{ secrets.GH_TOKEN }}
