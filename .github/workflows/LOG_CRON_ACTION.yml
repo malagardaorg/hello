@@ -15,7 +15,7 @@ jobs:
           path: ./.github/actions/github-cloud-project-sync
           token: ${{ secrets.GH_TOKEN }}
       - name: Check closed issue state step
-        uses: ./.github/actions/github-cloud-project-sync/code/github-cloud-project-sync@main
+        uses: ./.github/actions/github-cloud-project-sync/code/github-cloud-project-sync
         id: log_sync_project
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
