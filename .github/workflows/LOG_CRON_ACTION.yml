@@ -13,7 +13,7 @@ jobs:
           repository: malagardaorg/github-cloud-project-sync
           ref: refs/heads/main
           path: ./.github/actions/github-cloud-project-sync
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.GH_TOKEN}}
       - name: Check closed issue state step
         uses: ./.github/actions/github-cloud-project-sync/code/github-cloud-project-sync
         id: log_sync_project
