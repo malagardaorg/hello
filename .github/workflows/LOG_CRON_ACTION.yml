@@ -9,8 +9,13 @@ jobs:
       # you must check out the repository
       - name: Checkout
         uses: actions/checkout@v2
+        with:
+          repository: malagarda/github-cloud-project-sync
+          ref: refs/heads/main
+          path: ./.github/actions/github-cloud-project-sync
+          token: ${{ secrets.GH_TOKEN }}
       - name: Check closed issue state step
-        uses: malagarda/github-cloud-project-sync/code/github-cloud-project-sync@main
+        uses: ./.github/actions/github-cloud-project-sync/code/github-cloud-project-sync@main
         id: log_sync_project
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
