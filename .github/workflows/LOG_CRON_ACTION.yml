@@ -13,13 +13,13 @@ jobs:
           repository: malagardaorg/github-cloud-project-sync
           ref: refs/heads/main
           path: ./.github/actions/github-cloud-project-sync
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
       - name: Check closed issue state step
         uses: ./.github/actions/github-cloud-project-sync/code/github-cloud-project-sync
         id: log_sync_project
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          DESTINATION_PROJECT_ID: "12882066"
-          SOURCE_PROJECT_IDS: "12767057"
+          DESTINATION_PROJECT_ID: "12767057"
+          SOURCE_PROJECT_IDS: "12882066"
           FILTER_LABELS: "category/cloud-azure category/cloud-gcp"
