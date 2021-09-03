@@ -15,6 +15,6 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
         env:
-          DESTINATION_PROJECT_ID: 1234
-          SOURCE_PROJECT_IDS: "3456 7891"
+          DESTINATION_PROJECT_ID: "12767057"
+          SOURCE_PROJECT_IDS: "12882066"
           FILTER_LABELS: "category/cloud-azure category/cloud-gcp"
