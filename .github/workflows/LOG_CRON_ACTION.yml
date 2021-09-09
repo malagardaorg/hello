@@ -22,4 +22,4 @@ jobs:
         env:
           DESTINATION_PROJECT_ID: "12767057"
           SOURCE_PROJECT_IDS: "12882066 12882085"
-          FILTER_LABELS: "category/cloud-gcp category/cloud-azure"
+          FILTER_LABELS: "category/cloud-gcp category/cloud-azure category/cloud-aws"
